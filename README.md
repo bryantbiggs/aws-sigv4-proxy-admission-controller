@@ -4,29 +4,7 @@ The mutation admission controller will inject the [AWS SIGv4 Proxy](https://gith
 
 ## Getting Started
 
-A helm chart exists to deploy all the resources needed to use the admission controller here: https://github.com/aws/eks-charts/tree/master/stable/aws-sigv4-proxy-admission-controller/.
-
-### Installing the Controller via Helm Chart
-
-Add the EKS repository to Helm:
-
-```bash
-helm repo add eks https://aws.github.io/eks-charts
-```
-
-Install the AWS SIGv4 Admission Controller chart with default configuration:
-
-```bash
-helm install aws-sigv4-proxy-admission-controller eks/aws-sigv4-proxy-admission-controller --namespace <namespace>
-```
-
-### Uninstalling the Helm Chart
-
-To uninstall/delete the `aws-sigv4-proxy-admission-controller` release:
-
-```bash
-helm uninstall aws-sigv4-proxy-admission-controller --namespace <namespace>
-```
+See the [Helm chart](./helm/aws-sigv4-proxy-admission-controller/) for instructions on how to install the AWS SIGv4 Proxy Admission Controller using Helm.
 
 ### Doing It Yourself
 
